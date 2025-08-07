@@ -7,7 +7,8 @@ def prin(request):
 def usuarios(request):
     novo_usuario = Usuario()
     novo_usuario.nome = request.POST.get('nome')
-    novo_usuario.idade = request.POST.get('idade')
+    novo_usuario.link = request.POST.get('link')
+    novo_usuario.preco = request.POST.get('preco')
     novo_usuario.save()
     #Exibir usuarios em nova página
     usuarios = {

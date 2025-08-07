@@ -6,13 +6,15 @@
         <tr>
             <th>id</th>
             <th>nome</th>
-            <th>idade</th>
+            <th>preco</th>
+            <th>link</th>
         </tr>
         {% for usuario in usuarios %}
         <tr>
             <td>{{usuario.id_usuario}}</td>
             <td>{{usuario.nome}}</td>
-            <td>{{usuario.idade}}</td>
+            <td>{{usuario.preco}}</td>
+            <td>{{usuario.link}}</td>
         </tr>
         {% endfor %}
     </table>
